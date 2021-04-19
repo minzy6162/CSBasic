@@ -65,6 +65,20 @@ namespace CSBasic
             Console.WriteLine("bool:" + sizeof(bool));
 
             bool TrueOrFalse = false;
+
+            int output = 0;
+            output += 52;
+            output += 42;
+
+            Console.WriteLine(output);
+
+            output *= 2;
+            Console.WriteLine(output);
+
+            string output2 = "Hello";
+            output2 += "World";
+            output2 += "!";
+            Console.WriteLine(output2);
         }
     }
 }
