@@ -21,6 +21,36 @@ namespace CSBasic
             Console.Write("개행되는 ");
 
             Console.WriteLine(52);
+            Console.WriteLine(5 * 3 * 2);
+            Console.WriteLine(10/5);
+            Console.WriteLine(5%3);
+
+            Console.WriteLine(9);
+            Console.WriteLine(0.0);
+
+            Console.WriteLine(1.0 + 2.0);
+            Console.WriteLine(1.0 - 2.0);
+            Console.WriteLine(1.0 * 2.0);
+
+            Console.WriteLine(1.0 / 2.0);
+            Console.WriteLine(1 / 2);
+            Console.WriteLine(1.0 / 2);
+            Console.WriteLine(1.0 - 2.0);
+
+            Console.WriteLine("미림림|u여쟈졍뵤효ㅑ걓교ㅓ" );
+            Console.WriteLine('가');
+
+            Console.WriteLine("안녕하세요!"[0]);
+            Console.WriteLine("안녕하세요!"[1]);
+            Console.WriteLine("안녕하세요!"[2]);
+            Console.WriteLine("안녕하세요!"[-0]);
+
+
+            Console.WriteLine(62 < 273);
+
+            Console.WriteLine(3 < DateTime.Now.Hour && DateTime.Now.Hour < 8);
+
+
         }
     }
 }
