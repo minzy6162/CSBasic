@@ -15,10 +15,12 @@ namespace CSBasic
             var name = "최" + "민" + "정";
             Console.Write("개형이 안되는 녀석");
             Console.WriteLine("개형이 안되는 녀석");
-            var alpha = "알파";
-            var 273alpha = "숫자이름";
-            var 한글변수명 = "된당";
-            string 😎😎😎 = "asfd";
+
+            Console.Write("개행이 안되는 ");
+            Console.WriteLine("");
+            Console.Write("개행되는 ");
+
+            Console.WriteLine(52);
         }
     }
 }
