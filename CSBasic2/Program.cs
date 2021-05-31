@@ -141,6 +141,7 @@ namespace CSBasic2
                     default:
                         Console.WriteLine("(╯°□°）╯︵ ┻━┻");
                         break;
+
                 }
 
             }
