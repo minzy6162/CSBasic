@@ -80,6 +80,7 @@ namespace CSBasic3
                 for (int j = 0; j < i + 1; j++)
                     Console.Write('*');
                 Console.Write('\n');
+
             }
         }
 
