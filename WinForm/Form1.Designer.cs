@@ -28,20 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // FormMain
+            // button1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.button1.Location = new System.Drawing.Point(22, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(225, 78);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "눌러주세요~";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 469);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(268, 419);
+            this.Controls.Add(this.button1);
             this.Location = new System.Drawing.Point(200, 200);
-            this.Name = "FormMain";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Form1";
             this.Text = "즐거운 금요일~";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }

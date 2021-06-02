@@ -20,8 +20,8 @@ namespace WindowsFormsApp1
         }
 
         private class FormMain : Form
-
         {
+
         }
     }
 }
