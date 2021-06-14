@@ -15,44 +15,72 @@ namespace CSBasic5
             Console.WriteLine(ml.Multi(103, 32));
             ml.Print();
             Console.WriteLine(ml.Sum(1, 100));
-            Console.WriteLine(MyMath.Abs(52));
-            Console.WriteLine(MyMath.Abs(273));
+            MyMath.Abs(52);
+            MyMath.Abs(273);
+            MyMath.Abs(52.273f);
+            MyMath.Abs(52.273);
+            MyMath.Abs(30000000000);
+
+            ml.somePublic();
+            //ml.someDefault();
+            //ml.somePrivate();
         }
 
         class MyMath
         {
-            public static int Abs(int input)
-            {
 
-                /* 삼항연산사 쓰면 더 짧아짐 밑에 코드가 삼항연산자 
-                 if(input < 0)
-                 {
-                     return -input;
-                 }
-                 else
-                 {
-                     return input;
-                 }*/
-                return (input < 0) ? -input : input;
+            public static void Abs(int input)
+            {
+                Console.WriteLine("정수:" + ((input < 0) ? -input : input));
             }
+
+            public static void Abs(double input)
+            {
+                Console.WriteLine("플롯:" + ((input < 0) ? -input : input));
+            }
+
+            public static void Abs(long input)
+            {
+                Console.WriteLine("롱:" + ((input < 0) ? -input : input));
+            }
+
+
         }
+
 
         class MultiClass
         {
+            public void somePublic()
+            {
+                Console.WriteLine("public!");
+            }
+
+            void someDefault()
+            {
+                Console.WriteLine("Default");
+            }
+
+            private void somePrivate()
+            {
+                Console.WriteLine("private!");
+            }
+
             public int Multi(int x, int y)
             {
                 return x * y;
             }
+
             public void Print()
             {
                 Console.WriteLine("Print() 메서드 호출!");
             }
+
             public int Sum(int min, int max)
             {
                 int output = 0;
-                for(int i = min; i<=max; i++)
+                for (int i = min; i <= max; i++)
                 {
-                    output += 1;
+                    output += i;
                 }
                 return output;
             }
