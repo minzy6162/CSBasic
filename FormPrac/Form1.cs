@@ -12,9 +12,14 @@ namespace FormPrac
 {
     public partial class Form1 : Form
     {
+        enum OrderState { Ordered, Paymented, Prepared, Sended };
+        enum Course { NewmediaSoftware, NewmeidaWebsolution, NewmediaDesign };
+        enum CFood { 짜장면, 짬뽕, 볶음밥 };
+
         public Form1()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
 
         private void btnMessageBox1_Click(object sender, EventArgs e)
@@ -46,6 +51,20 @@ namespace FormPrac
                     break;
             }
 
+        }
+
+        private void btnModaless_Click(object sender, EventArgs e)
+        {
+            Form form = new FormCustom();
+            if (sender == btnModaless)
+            {
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (sender == btnModal)
+            {
+                form.ShowDialog();
+            }
         }
     }
 }
